@@ -1,0 +1,66 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.example.uniq'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.example.uniq"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    packagingOptions
+            {
+                exclude 'META-INF/DEPENDENCIES'
+            }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets {
+        main {
+            assets {
+                srcDirs 'src\\main\\assets'
+            }
+            resources {
+                srcDirs 'src\\main\\resources'
+            }
+        }
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'org.apache.opennlp:opennlp-tools:1.9.3'
+    implementation 'com.itextpdf:itextg:5.5.10'
+    implementation 'org.zwobble.mammoth:mammoth:1.4.2'
+    implementation 'org.nd4j:nd4j-native-platform:1.0.0-beta7'
+    implementation 'org.deeplearning4j:deeplearning4j-nlp:1.0.0-beta7'
+    implementation 'org.deeplearning4j:deeplearning4j-core:1.0.0-beta7'
+    implementation 'org.nd4j:nd4j-native-platform:1.0.0-beta7'
+    implementation 'org.nd4j:jackson:1.0.0-beta7'
+    implementation 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+}

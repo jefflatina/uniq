@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:id="@+id/linearLayout"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvFullName"
+            android:layout_weight="1"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="22sp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text=""
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginEnd="15dp"
+            app:cardBackgroundColor="@color/pink"
+            app:cardCornerRadius="360dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/placeholder_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/badge_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp">
+
+            </ImageView>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:text="BE AN AUTHENTIC"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:text="WRITER"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:text="Perform writing ethics with this all-in-one-app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/document_icon"
+            android:layout_width="150dp"
+            android:layout_height="150dp">
+
+        </ImageView>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/montserrat"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:text="Empowering Authenticity"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:text="Verify Originality, Ensuring Integrity"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:text="Submit a text to check for similiraties and maintain originality with just a few clicks."
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_gravity="end"
+                        android:id="@+id/cardViewDetect"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardBackgroundColor="@color/carrot"
+                        app:cardCornerRadius="10dp"
+                        android:layout_marginStart="15sp"
+                        android:layout_marginEnd="15sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_marginBottom="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginStart="15sp"
+                            android:layout_marginEnd="15sp"
+                            android:layout_marginTop="5sp"
+                            android:layout_marginBottom="5sp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:textSize="15sp"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:text="DETECT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:text="Unlock a world of Knowledge"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:text="Enhancing the authenticity and reliability of your work, discover relevant sources for citations and comprehensive references."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_gravity="end"
+                        android:id="@+id/cardViewLearn"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:cardBackgroundColor="@color/primary"
+                        app:cardCornerRadius="10dp"
+                        android:layout_marginStart="15sp"
+                        android:layout_marginEnd="15sp"
+                        android:layout_marginBottom="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginStart="15sp"
+                            android:layout_marginEnd="15sp"
+                            android:layout_marginTop="5sp"
+                            android:layout_marginBottom="5sp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:textSize="15sp"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:text="LEARN"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
